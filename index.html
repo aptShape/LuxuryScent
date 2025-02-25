@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Luxurious Scent</title>
+  <link rel="stylesheet" href="fasada.css">
+</head>
+<body>
+<div class="loader"></div> <!-- Loader element -->
+
+<div class="main-content">
+  <div class="top-section">
+    <div class="left-side">
+      <h1 id="naslov">Luxurious Scent</h1>
+      <p>Discover fragrances that tell your story</p>
+    </div>
+    <div class="right-column">
+      <div class="language-container">
+        <button class="language-switch">
+          <span>Select Language</span>
+        </button>
+        <div class="language-dropdown">
+          <button class="flag-button" data-language="en">
+            <img src="https://flagcdn.com/gb.svg" alt="GB"> English
+          </button>
+          <button class="flag-button" data-language="mk">
+            <img src="https://flagcdn.com/mk.svg" alt="MK"> Македонски
+          </button>
+          <button class="flag-button" data-language="al">
+            <img src="https://flagcdn.com/al.svg" alt="AL"> Shqipe
+          </button>
+          <button class="flag-button" data-language="de">
+            <img src="https://flagcdn.com/de.svg" alt="DE"> Deutsche
+          </button>
+        </div>
+      </div>
+      <div class="contact-info">
+        <button class="contact-info-btn" onclick="scrollToBottom()">Contact</button>
+      </div>
+      <div class="order-info">
+        <button class="order-info-btn">Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div id="photoStart">
+    <div class="image-overlay">
+      <h2 id="image-text">Our Story</h2>
+      <p id="image-text-p">Italian Premium Fragrances offers the perfect blend of elegance, quality, and affordability. Each scent is carefully crafted to tell your unique story.</p>
+      <a href="catalogue.html" target="_blank">
+      <button id="action-button">Discover our catalogue</button>
+      </a>
+    </div>
+  </div>
+  <!-- About Section -->
+  <div class="about">
+    <img src="photos/1685625424492_1000x1000.webp" alt="portokal">
+    <div class = "right-side-about">
+      <h3 id = "headAbout">Where our perfumes come from</h3>
+      <p>We have an exclusive contract with FragWorld, a renowned perfumer established in Grasse for over 250 years. Indeed, it is one of the pioneers of the beautiful French perfumery.</p>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div id="social-media-bar" class="bottom-bar">
+    <div class="social-media">
+      <a href="#" target="_blank"><img src="svg's/facebook.svg" alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="svg's/instagram.svg" alt="Instagram"></a>
+      <a href="#" target="_blank"><img src="svg's/twitter.svg" alt="Twitter"></a>
+    </div>
+    <h3 class="bottom-bar-text">Copyright © 2025 ItalianPerfumes.com All Rights Reserved.</h3>
+  </div>
+
+</div>
+
+<script>
+  // Smooth scroll to bottom bar
+  document.querySelector(".language-switch").addEventListener("click", function () {
+    document.querySelector(".language-dropdown").classList.toggle("show");
+  });
+
+  window.addEventListener('load', function () {
+    document.querySelector('.loader').style.display = 'none'; // Hides the loader
+    document.querySelector('.main-content').style.display = 'block'; // Ensures main content is visible
+  });
+  // Language translations
+  const translations = {
+    en: {
+      title: "Luxurious Scent",
+      subtitle: "Discover fragrances that tell your story",
+      ourStory: "Our Story",
+      ourStoryParagraph: "Italian Premium Fragrances offers the perfect blend of" +
+              " elegance, quality, and affordability. Each scent is carefully crafted to tell your unique story.",
+      catalogueButton: "Discover our catalogue",
+      aboutHeading: "Where our perfumes come from",
+      aboutText:
+              "We have an exclusive contract with FragWorld, a renowned perfumer established in Grasse for over 250 years. Indeed, it is one of the pioneers of the beautiful French perfumery.",
+    },
+    mk: {
+      title: "Луксузен Мирис",
+      subtitle: "Откријте мириси кои ја раскажуваат вашата приказна",
+      ourStory: "Нашата Приказна",
+      ourStoryParagraph:
+              "Италијанските премиум парфеми нудат совршен спој на елеганција, квалитет и достапност. Секој мирис е " +
+              "внимателно изработен за да ја раскаже вашата уникатна приказна.",
+      catalogueButton: "Истражете го нашиот каталог",
+      aboutHeading: "Од каде доаѓаат нашите парфеми",
+      aboutText:
+              "Имаме ексклузивен договор со FragWorld, познат парфимер основан во Грас пред повеќе од 250 години. Навистина, тоа е еден од пионерите на убавата француска парфимерија.",
+    },
+    al: {
+      title: "Aromë Luksore",
+      subtitle: "Zbuloni aromat që tregojnë historinë tuaj",
+      ourStory: "Historia Jonë",
+      ourStoryParagraph:
+              "Parfumet Premium Italiane ofrojnë kombinimin perfekt të elegancës, cilësisë dhe përballueshmërisë. Çdo aromë është krijuar" +
+              " me kujdes për të treguar historinë tuaj unike.",
+      catalogueButton: "Zbuloni katalogun tonë",
+      aboutHeading: "Nga vijnë parfumet tona",
+      aboutText:
+              "Kemi një kontratë ekskluzive me FragWorld, një parfumier i njohur i themeluar në Grasse për më shumë se 250 vjet. Në fakt, është një nga pionierët e parfumerisë së bukur franceze.",
+    },
+    de: {
+      title: "Luxuriöser Duft",
+      subtitle: "Entdecken Sie Düfte, die Ihre Geschichte erzählen",
+      ourStory: "Unsere Geschichte",
+      ourStoryParagraph:
+              "Italienische Premiumdüfte bieten die perfekte Mischung aus Eleganz, Qualität und Erschwinglichkeit. Jeder Duft wird sorgfältig kreiert, um Ihre einzigartige Geschichte zu erzählen.",
+      catalogueButton: "Entdecken Sie unseren Katalog",
+      aboutHeading: "Woher unsere Parfums kommen",
+      aboutText:
+              "Wir haben einen Exklusivvertrag mit FragWorld, einem renommierten Parfümeur, der seit über 250 Jahren in Grasse ansässig ist. Tatsächlich ist es einer der Pioniere der schönen französischen Parfümerie.",
+    },
+  };
+
+  // Language switch logic
+  document.querySelectorAll(".flag-button").forEach((button) => {
+    button.addEventListener("click", function () {
+      const selectedLanguage = this.getAttribute("data-language");
+      const translation = translations[selectedLanguage];
+
+      // Update text content dynamically
+      document.getElementById("naslov").textContent = translation.title;
+      document.querySelector(".left-side p").textContent = translation.subtitle;
+      document.getElementById("image-text").textContent = translation.ourStory;
+      document.getElementById("image-text-p").textContent = translation.ourStoryParagraph;
+      document.getElementById("action-button").textContent =
+              translation.catalogueButton;
+      document.getElementById("headAbout").textContent = translation.aboutHeading;
+      document.querySelector(".right-side-about p").textContent =
+              translation.aboutText;
+
+      // Close dropdown after selection
+      document.querySelector(".language-dropdown").classList.remove("show");
+    });
+  });
+  // Scroll to bottom bar functionality
+  function scrollToBottom() {
+    const bottomBar = document.querySelector(".bottom-bar");
+    bottomBar.scrollIntoView({ behavior: "smooth" });
+  }
+
+</script>
+
+</body>
+</html>
