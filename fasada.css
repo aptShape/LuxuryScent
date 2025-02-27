@@ -25,14 +25,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, #1a1a1a, #2c2c2c); /* Dark gradient */
-    border-bottom: 1px solid #444; /* Subtle border */
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+    border-bottom: 1px solid #444;
 }
-.logo {
-    width: 100px; /* Slightly larger logo */
+/*.logo {
+    width: 100px; !* Slightly larger logo *!
     height: auto;
-    margin-bottom: 20px; /* More space below the logo */
-}
+    margin-bottom: 20px; !* More space below the logo *!
+}*/
 
 .left-side {
     text-align: center;
@@ -82,8 +82,8 @@ body {
 }
 
 .flag-button img {
-    width: 500px;
-    height: 30px;
+    width: 20px;
+    height: 15px;
 }
 .flag-button:hover {
     background: #444; /* Hover effect */
