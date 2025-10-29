@@ -1,7 +1,1 @@
-"# ParfumesWebpage" 
-"# LuxuriousScentMK" 
-"# LuxuriousScentMK" 
-"# LuxuriousScentMK" 
-"# LuxuriousParfumeWebpage" 
-"# LuxuryScent" 
-"# LuxuryScent" 
+A static website made from scratch using HTML/CSS and Java
